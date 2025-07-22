@@ -24,6 +24,7 @@ class Item{
 
         num ++ ;
     }
+    //Function responsible for printing data
     void print (Item ob[] , int size){
         cout<<"inventory "<<endl;
         for(int x = 0 ; x < size ; x++){
@@ -35,6 +36,7 @@ class Item{
         cout<<endl;
        }
     }
+    //Search function through which you can search for any product
     void Search (Item ob[] , int size){
         cout<<"Search location "<<endl;
         int code ;
@@ -58,6 +60,7 @@ class Item{
             }
         }while(true);
     }
+    //DataModification function through which you can modify the data of any product
     void DataModification(Item ob[] , int size){
         cout<<"Betrayed by the amendment "<<endl;
         int code ;
@@ -93,6 +96,7 @@ class Item{
             }
         }while(true);
     }
+    //Delete function that allows you to delete any product
     void Delete (Item ob[] , int& size){
         cout<<"Deletion location "<<endl;
         int code;
@@ -135,6 +139,7 @@ class Item{
         }while(true);
         
     }
+    //TotalPrice function can be used to calculate the total price of any product.
     void TotalPrice(Item ob[] , int size){
         int code ;
         do{
@@ -155,6 +160,7 @@ class Item{
             } 
         }while(true);
     }
+    //The LessQuantityItems function can be used to find out the minimum quantity of a product.
     void LessQuantityItems(Item ob[] , int size){
         int num ;
         cout<<"Enter a number to know the items with the least quantity : ";
